@@ -32,21 +32,24 @@
             this.downloadDataButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.contoursCheckBox = new System.Windows.Forms.CheckBox();
+            this.waterCheckBox = new System.Windows.Forms.CheckBox();
+            this.stormwaterCheckBox = new System.Windows.Forms.CheckBox();
+            this.wastewaterCheckBox = new System.Windows.Forms.CheckBox();
+            this.imperviousSurfaceCheckBox = new System.Windows.Forms.CheckBox();
+            this.parcelCheckBox = new System.Windows.Forms.CheckBox();
+            this.buildingFootprintCheckBox = new System.Windows.Forms.CheckBox();
+            this.addressCheckBox = new System.Windows.Forms.CheckBox();
             this.addressSearchBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.boundingBoxLabel = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.spatialRefCBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // gMapControl
@@ -101,100 +104,100 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkBox8);
-            this.groupBox2.Controls.Add(this.checkBox7);
-            this.groupBox2.Controls.Add(this.checkBox6);
-            this.groupBox2.Controls.Add(this.checkBox5);
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.contoursCheckBox);
+            this.groupBox2.Controls.Add(this.waterCheckBox);
+            this.groupBox2.Controls.Add(this.stormwaterCheckBox);
+            this.groupBox2.Controls.Add(this.wastewaterCheckBox);
+            this.groupBox2.Controls.Add(this.imperviousSurfaceCheckBox);
+            this.groupBox2.Controls.Add(this.parcelCheckBox);
+            this.groupBox2.Controls.Add(this.buildingFootprintCheckBox);
+            this.groupBox2.Controls.Add(this.addressCheckBox);
             this.groupBox2.Location = new System.Drawing.Point(428, 56);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(130, 334);
+            this.groupBox2.Size = new System.Drawing.Size(130, 212);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Layers";
             // 
-            // checkBox8
+            // contoursCheckBox
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(6, 42);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(68, 17);
-            this.checkBox8.TabIndex = 0;
-            this.checkBox8.Text = "Contours";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.contoursCheckBox.AutoSize = true;
+            this.contoursCheckBox.Location = new System.Drawing.Point(6, 42);
+            this.contoursCheckBox.Name = "contoursCheckBox";
+            this.contoursCheckBox.Size = new System.Drawing.Size(68, 17);
+            this.contoursCheckBox.TabIndex = 0;
+            this.contoursCheckBox.Text = "Contours";
+            this.contoursCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // waterCheckBox
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(6, 180);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(55, 17);
-            this.checkBox7.TabIndex = 0;
-            this.checkBox7.Text = "Water";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.waterCheckBox.AutoSize = true;
+            this.waterCheckBox.Location = new System.Drawing.Point(6, 180);
+            this.waterCheckBox.Name = "waterCheckBox";
+            this.waterCheckBox.Size = new System.Drawing.Size(55, 17);
+            this.waterCheckBox.TabIndex = 0;
+            this.waterCheckBox.Text = "Water";
+            this.waterCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // stormwaterCheckBox
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(6, 157);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(79, 17);
-            this.checkBox6.TabIndex = 0;
-            this.checkBox6.Text = "Stormwater";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.stormwaterCheckBox.AutoSize = true;
+            this.stormwaterCheckBox.Location = new System.Drawing.Point(6, 157);
+            this.stormwaterCheckBox.Name = "stormwaterCheckBox";
+            this.stormwaterCheckBox.Size = new System.Drawing.Size(79, 17);
+            this.stormwaterCheckBox.TabIndex = 0;
+            this.stormwaterCheckBox.Text = "Stormwater";
+            this.stormwaterCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // wastewaterCheckBox
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(6, 134);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(83, 17);
-            this.checkBox5.TabIndex = 0;
-            this.checkBox5.Text = "Wastewater";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.wastewaterCheckBox.AutoSize = true;
+            this.wastewaterCheckBox.Location = new System.Drawing.Point(6, 134);
+            this.wastewaterCheckBox.Name = "wastewaterCheckBox";
+            this.wastewaterCheckBox.Size = new System.Drawing.Size(83, 17);
+            this.wastewaterCheckBox.TabIndex = 0;
+            this.wastewaterCheckBox.Text = "Wastewater";
+            this.wastewaterCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // imperviousSurfaceCheckBox
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 111);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(117, 17);
-            this.checkBox4.TabIndex = 0;
-            this.checkBox4.Text = "Impervious Surface";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.imperviousSurfaceCheckBox.AutoSize = true;
+            this.imperviousSurfaceCheckBox.Location = new System.Drawing.Point(6, 111);
+            this.imperviousSurfaceCheckBox.Name = "imperviousSurfaceCheckBox";
+            this.imperviousSurfaceCheckBox.Size = new System.Drawing.Size(117, 17);
+            this.imperviousSurfaceCheckBox.TabIndex = 0;
+            this.imperviousSurfaceCheckBox.Text = "Impervious Surface";
+            this.imperviousSurfaceCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // parcelCheckBox
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(6, 88);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(56, 17);
-            this.checkBox3.TabIndex = 0;
-            this.checkBox3.Text = "Parcel";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.parcelCheckBox.AutoSize = true;
+            this.parcelCheckBox.Location = new System.Drawing.Point(6, 88);
+            this.parcelCheckBox.Name = "parcelCheckBox";
+            this.parcelCheckBox.Size = new System.Drawing.Size(56, 17);
+            this.parcelCheckBox.TabIndex = 0;
+            this.parcelCheckBox.Text = "Parcel";
+            this.parcelCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // buildingFootprintCheckBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 65);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(107, 17);
-            this.checkBox2.TabIndex = 0;
-            this.checkBox2.Text = "Building Footprint";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.buildingFootprintCheckBox.AutoSize = true;
+            this.buildingFootprintCheckBox.Location = new System.Drawing.Point(6, 65);
+            this.buildingFootprintCheckBox.Name = "buildingFootprintCheckBox";
+            this.buildingFootprintCheckBox.Size = new System.Drawing.Size(107, 17);
+            this.buildingFootprintCheckBox.TabIndex = 0;
+            this.buildingFootprintCheckBox.Text = "Building Footprint";
+            this.buildingFootprintCheckBox.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // addressCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(64, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Address";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.addressCheckBox.AutoSize = true;
+            this.addressCheckBox.Location = new System.Drawing.Point(6, 19);
+            this.addressCheckBox.Name = "addressCheckBox";
+            this.addressCheckBox.Size = new System.Drawing.Size(64, 17);
+            this.addressCheckBox.TabIndex = 0;
+            this.addressCheckBox.Text = "Address";
+            this.addressCheckBox.UseVisualStyleBackColor = true;
             // 
             // addressSearchBox
             // 
@@ -240,11 +243,35 @@
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.spatialRefCBox);
+            this.groupBox3.Location = new System.Drawing.Point(428, 275);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(130, 115);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Spatial Reference";
+            // 
+            // spatialRefCBox
+            // 
+            this.spatialRefCBox.FormattingEnabled = true;
+            this.spatialRefCBox.Items.AddRange(new object[] {
+            "Nztm",
+            "Mt Eden",
+            "WGS84",
+            "NZ Map Grid"});
+            this.spatialRefCBox.Location = new System.Drawing.Point(6, 30);
+            this.spatialRefCBox.Name = "spatialRefCBox";
+            this.spatialRefCBox.Size = new System.Drawing.Size(112, 21);
+            this.spatialRefCBox.TabIndex = 0;
+            // 
             // Map
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 448);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.boundingBoxLabel);
             this.Controls.Add(this.label2);
@@ -258,6 +285,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,18 +297,20 @@
         private System.Windows.Forms.Button downloadDataButton;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox contoursCheckBox;
+        private System.Windows.Forms.CheckBox waterCheckBox;
+        private System.Windows.Forms.CheckBox stormwaterCheckBox;
+        private System.Windows.Forms.CheckBox wastewaterCheckBox;
+        private System.Windows.Forms.CheckBox imperviousSurfaceCheckBox;
+        private System.Windows.Forms.CheckBox parcelCheckBox;
+        private System.Windows.Forms.CheckBox buildingFootprintCheckBox;
+        private System.Windows.Forms.CheckBox addressCheckBox;
         private System.Windows.Forms.TextBox addressSearchBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label boundingBoxLabel;
         private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox spatialRefCBox;
     }
 }

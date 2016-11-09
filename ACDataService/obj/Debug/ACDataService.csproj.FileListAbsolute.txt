@@ -1,0 +1,17 @@
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\obj\Debug\ACDataService.csprojResolveAssemblyReference.cache
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\obj\Debug\ACDataService.Map.resources
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\obj\Debug\ACDataService.MyCommands.resources
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\obj\Debug\ACDataService.csproj.GenerateResource.Cache
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\ACDataService.dll
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\ACDataService.pdb
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\GMap.NET.Core.dll
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\PresentationCore.dll
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\AcTcMgd.dll
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\AcCui.dll
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\GMap.NET.Core.xml
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\GMap.NET.WindowsForms.xml
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\obj\Debug\ACDataService.dll
+C:\Users\Jericho Masigan\Documents\Programming\AutoCAD.ACService\ACDataService\obj\Debug\ACDataService.pdb

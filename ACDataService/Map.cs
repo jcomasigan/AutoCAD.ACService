@@ -23,6 +23,8 @@ namespace ACDataService
         double latBottom = 0;
         double lngBottom = 0;
         Rectangle rect = new Rectangle();
+        Tuple<double, double, double, double> bbox;
+        
 
         public Map()
         {
@@ -81,8 +83,8 @@ namespace ACDataService
         private Rectangle WGS84toNZTM(Rectangle bbx)
         {
 
-            NZTG2000.geod_nztm(MathFunc.Deg2Rad(latTop), MathFunc.Deg2Rad(lngTop), ref latTop, ref lngTop);
-            NZTG2000.geod_nztm(MathFunc.Deg2Rad(latBottom), MathFunc.Deg2Rad(lngBottom), ref latBottom, ref lngBottom);
+           // NZTG2000.geod_nztm(MathFunc.Deg2Rad(latTop), MathFunc.Deg2Rad(lngTop), ref latTop, ref lngTop);
+           // NZTG2000.geod_nztm(MathFunc.Deg2Rad(latBottom), MathFunc.Deg2Rad(lngBottom), ref latBottom, ref lngBottom);
             boundingBoxLabel.Text = string.Format("{0},{1} | {2}, {3}", Math.Round(latTop, 2), Math.Round(lngTop, 2), Math.Round(latBottom, 2), Math.Round(lngBottom, 2));
             return new Rectangle();
         }
@@ -114,6 +116,33 @@ namespace ACDataService
             }
         }
 
+        private AC_Layers SetLayersToGet()
+        {
+            AC_Layers acLay = new AC_Layers();
+            acLay.getAddress = addressCheckBox.Checked;
+            acLay.getBuildingFootprint = buildingFootprintCheckBox.Checked;
+            acLay.getContours = contoursCheckBox.Checked;
+            acLay.getParcel = parcelCheckBox.Checked;
+            acLay.getStormWater = stormwaterCheckBox.Checked;
+            acLay.getImpervious = imperviousSurfaceCheckBox.Checked;
+            acLay.getWater = waterCheckBox.Checked;
+            acLay.getWasteWater = wastewaterCheckBox.Checked;
+            switch(spatialRefCBox.SelectedText)
+            {
+                case "Nztm":
+                    acLay.SpatialRef = AC_Layers.SpatialReference.Nztm;
+                    break;
+                case "Mt Eden":
+                    acLay.SpatialRef = AC_Layers.SpatialReference.MtEden;
+                    break;
+                case "WGS84":
+                    acLay.SpatialRef = AC_Layers.SpatialReference.WGS84;
+                    break;
+
+            }
+            return acLay;
+        }
+
         private void searchButton_Click(object sender, EventArgs e)
         {
             if(addressSearchBox.Text != "")
@@ -127,7 +156,9 @@ namespace ACDataService
 
         private void downloadDataButton_Click(object sender, EventArgs e)
         {
-
+            Tuple<double, double, double, double> bbox = new Tuple<double, double, double, double>(latTop, lngTop, latTop, lngBottom );
+            AC_Layers layers = SetLayersToGet();
+            ACDataService.GetACData.GetData(bbox, layers);
         }
 
 
